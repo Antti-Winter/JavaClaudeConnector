@@ -1,0 +1,25 @@
+# Luo tai muokkaa .gitignore-tiedostoa
+cat > .gitignore << EOF
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Konfiguraatiotiedostot, jotka sisältävät salaisuuksia
+config.properties
+
+# IDE-tiedostot
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Muut tiedostot
+*.log
+EOF
